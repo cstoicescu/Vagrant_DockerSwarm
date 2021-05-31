@@ -20,6 +20,11 @@
 
 Vagrant Setup for 2 VM's ( manager and worker ) using DockerSwarm Orchestration Framework
 
+### Tutorial  
+
+https://user-images.githubusercontent.com/53979557/120244912-39675400-c274-11eb-81b2-80069416fbc2.mp4
+
+
 On your laptop you should have installed next software:
 ```
 Vagrant 2.0.2 or higher: https://www.vagrantup.com/docs/installation/
