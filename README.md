@@ -24,6 +24,16 @@ Vagrant Setup for 2 VM's ( manager and worker ) using DockerSwarm Orchestration 
 
 https://user-images.githubusercontent.com/53979557/120244912-39675400-c274-11eb-81b2-80069416fbc2.mp4
 
+## Final Result: 
+
+![1](https://user-images.githubusercontent.com/53979557/120245103-d4602e00-c274-11eb-8b2a-3c7779557edb.png)  
+
+Accessing Different Container Instances 
+
+![2](https://user-images.githubusercontent.com/53979557/120245127-e215b380-c274-11eb-8101-f3677ee51a0c.png)
+
+Docker Visualizer 
+![3](https://user-images.githubusercontent.com/53979557/120245130-e641d100-c274-11eb-9a82-e4ed7dae92d7.png)
 
 On your laptop you should have installed next software:
 ```
@@ -147,4 +157,5 @@ vagrant destroy
 ==> swarm_worker: Destroying VM and associated drives...
     swarm_manager: Are you sure you want to destroy the 'swarm_manager' VM? [y/N] y
 ==> swarm_manager: Destroying VM and associated drives...
-```
+```  
+In order to have a better visualization of running contianers we can use the docker visualizer. Simply run docker container run -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock -d dockersamples/visualizer  
