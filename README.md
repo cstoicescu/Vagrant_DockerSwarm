@@ -96,13 +96,7 @@ docker stack ls
 NAME                SERVICES            ORCHESTRATOR
 swarm-test          2                   Swarm
 ```
-To see more detailed information about services you can use command below:
-```
-docker service ls
-ID                  NAME                MODE                REPLICAS            IMAGE                 PORTS
-wst59z76lezz        swarm-test_nginx    replicated          0/5                 ningx:1.15.8-alpine   
-vwifnjnrpf55        swarm-test_redis    replicated          1/1                 redis:5.0.3      
-```
+
 You can see that nginx has 0 replicas(your number maybe different). This mean that deploy is still in progress.
 If we will execute this command one more time, then we will see that amount of containers 
 increased to 12 for nginx service.
