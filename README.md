@@ -4,7 +4,7 @@
 
 ###  Here in this project i'll be dockerizing a Node.js application and then deploy 10 containers in a swarm cluster, load balance them behind a single IP with Nginx and then finally conclude with scaling them up and down also visualize the containers in a better way.  
 
-### So the main purpose of this project is not the NodeJs app itself, but rather to  deployi an Node.js app to 10 containers in a swarm then load balance them.
+### So the main purpose of this project is not the NodeJs app itself, but rather to  deploy a Node.js app to 10 containers in a swarm then load balance them.
 
 ## Content
 
