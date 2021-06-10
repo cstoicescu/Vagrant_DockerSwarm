@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  nodeapp:
+   image: cstoicescu/whoami-nodejs-app:1.4
+   ports:
+     - 8081:8081
+   deploy:
+     replicas: 10
+     restart_policy:
+       max_attempts: 3
+       condition: on-failure       
+     update_config:
+       parallelism: 3
+       delay: 10s
+   networks: 
+    - balance 
+  
+  proxy:
+    image: cstoicescu/nginx-balancer-conf:1.0
+    ports:
+      - 80:80
+    depends_on:
+      - nodeapp
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+    networks: 
+      - balance
+
+networks:
+  balance:
+    driver: overlay
