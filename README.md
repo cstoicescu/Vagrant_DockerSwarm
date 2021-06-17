@@ -16,7 +16,7 @@
  https://user-images.githubusercontent.com/53979557/120241164-d6bd8a80-c26a-11eb-81dd-e749cd34b591.gif
 
 
- ### Third Step:  Building an image from github repo and pushing it to Docker Hub
+ ### Third Step:  Follow Tutorial  
 
 Vagrant Setup for 2 VM's ( manager and worker ) using DockerSwarm Orchestration Framework
 
